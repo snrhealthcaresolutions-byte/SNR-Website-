@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SNR Healthcare Solutions | Medical Coding Consultancy</title>
+<meta name="description" content="Accurate, fast and compliant IPDRG coding services for US healthcare providers from SNR Healthcare Solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f6ff; --text:#0e1630; --muted:#56627f; --cyan:#0a82a8; --violet:#6a47f0; --amber:#c76a00;
+  --glass:rgba(255,255,255,.72); --edge:rgba(20,30,70,.12);
+  --sans:"Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);color:var(--text);line-height:1.6;font-size:17px;background:var(--bg);
+  background-image:
+   radial-gradient(60rem 40rem at 85% -10%,rgba(140,110,255,.26),transparent 60%),
+   radial-gradient(50rem 36rem at -5% 25%,rgba(70,200,240,.28),transparent 60%);
+  background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background-image:linear-gradient(rgba(40,60,140,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(40,60,140,.06) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(ellipse at 50% 20%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 20%,#000 20%,transparent 75%)}
+a{color:var(--cyan)}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+header{position:sticky;top:0;z-index:10;padding:12px 0 0}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 12px 10px 16px;border-radius:20px;background:rgba(255,255,255,.8);border:1px solid var(--edge);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 12px 40px rgba(60,70,160,.14),0 0 0 1px rgba(255,255,255,.7) inset}
+.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--text)}
+.mark{width:46px;height:46px;flex:none;filter:drop-shadow(0 6px 14px rgba(106,71,240,.35))}
+.name b{display:block;font-size:1.65rem;line-height:1;font-weight:700;letter-spacing:.1em;color:var(--cyan);background:linear-gradient(90deg,#0a82a8,#6a47f0);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.name small{display:block;margin-top:4px;font-size:.74rem;font-weight:500;letter-spacing:.04em;color:var(--muted)}
+nav{display:flex;align-items:center;gap:6px}
+nav a.link{color:var(--text);text-decoration:none;font-weight:500;padding:9px 15px;border-radius:12px;transition:background .2s,color .2s}
+nav a.link:hover{background:rgba(10,130,168,.09);color:var(--cyan)}
+nav .btn{margin-left:8px}
+
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;font-weight:700;text-decoration:none;color:#fff;
+  background:linear-gradient(135deg,var(--cyan),var(--violet));box-shadow:0 8px 24px rgba(106,71,240,.28)}
+.btn:hover{box-shadow:0 10px 32px rgba(106,71,240,.42)}
+.btn.small{padding:9px 18px;border-radius:10px;font-size:.92rem}
+.btn.ghost{background:var(--glass);color:var(--text);border:1px solid var(--edge);box-shadow:none}
+.btn.ghost:hover{border-color:var(--cyan)}
+
+.hero{padding:96px 0 80px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+h1{font-size:clamp(2.5rem,5.6vw,4.2rem);line-height:1.04;letter-spacing:-.025em;margin:0 0 22px;font-weight:700}
+.lead{font-size:1.15rem;color:var(--muted);max-width:32em;margin:0 0 32px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+h1 span{display:block}
+.lead{font-weight:500;color:var(--text)}
+.proof{list-style:none;margin:0 0 34px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;max-width:30em}
+.proof li{display:flex;align-items:center;gap:11px;font-weight:600}
+.proof li::before{content:"";flex:none;width:24px;height:24px;border-radius:50%;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 6.4l2.3 2.3 4.7-5' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/13px no-repeat,linear-gradient(135deg,#0a82a8,#6a47f0);
+  box-shadow:0 4px 12px rgba(106,71,240,.3)}
+
+
+.panel{position:relative;border-radius:20px;border:1px solid var(--edge);background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);overflow:hidden;box-shadow:0 30px 70px rgba(60,70,160,.18),0 0 0 1px rgba(255,255,255,.6) inset}
+.panel-head{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid var(--edge);font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.live{display:flex;align-items:center;gap:8px}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 10px var(--cyan)}
+.line{display:grid;grid-template-columns:84px 1fr auto;gap:14px;align-items:center;padding:15px 20px;border-bottom:1px solid rgba(20,30,70,.08)}
+.line b{font-family:var(--mono);color:var(--cyan);font-weight:700}
+.line span{font-size:.95rem}
+.state{font-family:var(--mono);font-size:.72rem;padding:3px 10px;border-radius:99px;border:1px solid rgba(10,130,168,.4);color:var(--cyan);white-space:nowrap}
+.line.flag{background:rgba(255,180,84,.16)}
+.line.flag b{color:var(--amber)}
+.line.flag .state{border-color:rgba(199,106,0,.5);color:var(--amber);animation:pulse 2.4s ease-in-out infinite}
+.panel-foot{padding:12px 20px;font-size:.8rem;color:var(--muted)}
+.beam{position:absolute;left:0;right:0;top:0;height:90px;pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(30,170,220,.12) 70%,rgba(30,170,220,.4) 100%);
+  border-bottom:1px solid rgba(10,130,168,.8);animation:scan 4.5s linear infinite}
+@keyframes scan{0%{transform:translateY(-100px);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(430px);opacity:0}}
+@keyframes pulse{50%{box-shadow:0 0 14px rgba(255,160,60,.5)}}
+
+section{padding:76px 0}
+h2{font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 14px}
+.intro{color:var(--muted);max-width:36em;margin:0 0 40px}
+
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.card{box-shadow:0 10px 30px rgba(60,70,160,.08);grid-column:span 2;padding:26px;border-radius:18px;border:1px solid var(--edge);background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:border-color .2s,transform .2s}
+.card:hover{border-color:rgba(10,130,168,.5)}
+.card.wide{grid-column:span 4;background:linear-gradient(135deg,rgba(70,200,240,.2),rgba(140,110,255,.2));padding:32px}
+.card h3{margin:0 0 8px;font-size:1.2rem}
+.card p{margin:0;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.chips code{font-family:var(--mono);font-size:.8rem;padding:4px 11px;border-radius:8px;background:rgba(255,255,255,.9);border:1px solid var(--edge);color:var(--cyan)}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:15px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--violet));opacity:.55}
+.steps li{position:relative;padding-top:48px}
+.steps li::before{content:"";position:absolute;top:6px;left:0;width:20px;height:20px;border-radius:50%;background:var(--bg);border:2px solid var(--cyan);box-shadow:0 0 14px rgba(10,130,168,.45)}
+.steps h3{margin:0 0 6px;font-size:1.1rem}
+.steps p{margin:0;color:var(--muted);font-size:.96rem}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about p{margin:0 0 16px;color:var(--muted)}
+
+.cta{position:relative;border-radius:24px;padding:2px;background:linear-gradient(135deg,var(--cyan),var(--violet),var(--amber))}
+.cta-in{border-radius:22px;padding:56px 40px;background:#fff;text-align:center}
+.cta-in p{color:var(--muted);max-width:30em;margin:0 auto 28px}
+.cta-in .fine{font-size:.88rem;margin:22px auto 0}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--edge);margin-top:40px}
+
+@media (max-width:860px){
+  .hero{padding:64px 0 48px}
+  .hero .wrap,.about{grid-template-columns:1fr;gap:36px}
+  .card,.card.wide{grid-column:span 6}
+  .steps{grid-template-columns:1fr 1fr;row-gap:32px}.steps::before{display:none}
+  nav a.link{display:none}
+  nav .btn{margin-left:0}
+  .cta-in{padding:40px 22px}
+}
+@media (max-width:480px){.proof{grid-template-columns:1fr}.name small{display:none}.mark{width:40px;height:40px}.steps{grid-template-columns:1fr}.line{grid-template-columns:72px 1fr}.line .state{grid-column:2;justify-self:start}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.beam{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="bar">
+      <a class="brand" href="#top" aria-label="SNR Healthcare Solutions, home">
+        <svg class="mark" viewBox="0 0 46 46" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a9bc4"/><stop offset="1" stop-color="#6a47f0"/></linearGradient>
+            <linearGradient id="gl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+          </defs>
+          <rect width="46" height="46" rx="14" fill="url(#lg)"/>
+          <rect width="46" height="23" rx="14" fill="url(#gl)"/>
+          <path d="M8 25h8l4-11 6 20 4-9h8" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="38" cy="25" r="2.6" fill="#fff"/>
+        </svg>
+        <span class="name"><b>SNR</b><small>Healthcare Solutions</small></span>
+      </a>
+      <nav aria-label="Main">
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#process">Process</a>
+        <a class="link" href="#about">About</a>
+        <a class="btn small" href="#contact">Get in touch</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1><span>Accurate IP Coding.</span> <span>Confident Compliance.</span></h1>
+        <p class="lead">Accurate. Fast. Compliant IPDRG Coding Services for US Healthcare Providers</p>
+        <ul class="proof">
+          <li>99% Coding Accuracy</li>
+          <li>Certified IPDRG Coders</li>
+          <li>24-48 Hours TAT</li>
+          <li>HIPAA Compliant</li>
+        </ul>
+        <div class="actions">
+          <a class="btn" href="#contact">Request a consultation</a>
+          <a class="btn ghost" href="#services">Explore services</a>
+        </div>
+      </div>
+
+      <div class="panel" aria-label="Illustration of a coding review">
+        <div class="beam" aria-hidden="true"></div>
+        <div class="panel-head"><span class="live"><i></i>Coding review</span><span>Sample data</span></div>
+        <div class="line"><b>I50.23</b><span>Acute on chronic systolic heart failure</span><em class="state" style="font-style:normal">Validated</em></div>
+        <div class="line flag"><b>J96.01</b><span>Acute respiratory failure with hypoxia</span><em class="state" style="font-style:normal">Clinical validation</em></div>
+        <div class="line"><b>N17.9</b><span>Acute kidney failure, unspecified</span><em class="state" style="font-style:normal">Validated</em></div>
+        <div class="line"><b>DRG 291</b><span>Heart failure and shock with MCC</span><em class="state" style="font-style:normal">Assigned</em></div>
+        <div class="panel-foot">Illustration only. No patient information is shown.</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="intro">Focused support for practices, clinics and billing teams. Edit these to match exactly what you offer.</p>
+      <div class="bento">
+        <div class="card wide">
+          <h3>Medical coding</h3>
+          <p>Accurate coding from clinical documentation, on an ongoing or project basis, matched to current code sets and payer rules.</p>
+          <div class="chips"><code>ICD-10-CM</code><code>CPT</code><code>HCPCS</code></div>
+        </div>
+        <div class="card"><h3>Coding audits</h3><p>Claims checked against documentation, with a clear report of findings and fixes.</p></div>
+        <div class="card"><h3>Denial review</h3><p>We find the coding causes behind denials and help prepare appeals.</p></div>
+        <div class="card"><h3>Documentation guidance</h3><p>Plain feedback for clinicians on what supports the codes they need.</p></div>
+        <div class="card"><h3>Staff training</h3><p>Coding updates and focused sessions for your in-house team.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2>How we work</h2>
+      <p class="intro">A clear process, from first conversation to measurable results.</p>
+      <ol class="steps">
+        <li><h3>Discover</h3><p>We learn your specialty, volume and current challenges.</p></li>
+        <li><h3>Review</h3><p>We examine records and claims under a confidentiality agreement.</p></li>
+        <li><h3>Report</h3><p>You receive findings and prioritized recommendations.</p></li>
+        <li><h3>Improve</h3><p>We help put fixes in place and check the results.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <h2>About SNR Healthcare Solutions</h2>
+      <div>
+        <p>Replace this text with your story: your background in medical coding, the specialties you know best, and any certifications you hold.</p>
+        <p>We treat every record as confidential and work to the privacy and security standards healthcare organizations expect.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta"><div class="cta-in">
+        <h2>Ready to tighten up your coding?</h2>
+        <p>Tell us about your practice and what you need. We will reply with next steps.</p>
+        <a class="btn" href="mailto:your-email@example.com">Email us</a>
+        <p class="fine">Please do not send patient information through this website or by regular email.</p>
+      </div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 SNR Healthcare Solutions. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
